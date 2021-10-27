@@ -113,7 +113,7 @@
 section{
     padding: 100px 0;
 }
-.about, .certificates{
+.about, .certificates, .skills{
     font-family: 'Poppins',sans-serif;
 }
 section .title{
