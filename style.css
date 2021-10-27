@@ -113,10 +113,10 @@
 section{
     padding: 100px 0;
 }
-.about{
+.about, .certificates{
     font-family: 'Poppins',sans-serif;
 }
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -125,7 +125,7 @@ section{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -135,8 +135,7 @@ section{
     background:#111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Who Am I";
+section .title::after{
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -146,7 +145,11 @@ section{
     background:#fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+.about .title::after{
+    content: "Who Am I";
+}
+.about .about-content,
+.certificates .certificates-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -190,6 +193,49 @@ section{
 .about .about-content .right a:hover{
     color: crimson;
     background: none;
+}
+
+.certificates{
+    color: #fff;
+    background: #111;
+}
+.certificates .title::before{
+    background: #fff;
+}
+.certificates .title::after{
+    background: #111;
+    content: "What I Learn";
+}
+.certificates .certificates-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.certificates .certificates-content .card:hover{
+    background: crimson;
+}
+.certificates .certificates-content .card .box{
+    transition: all 0.3s ease;
+}
+.certificates .certificates-content .card:hover .box{
+    transform: scale(1.05);
+}
+.certificates .certificates-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.certificates .certificates-content .card:hover i{
+    color: #fff;
+}
+.certificates .certificates-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 @media(max-width: 947px){
@@ -248,5 +294,9 @@ section{
     }
     .about .about-content .right{
         flex :100%;
+    }
+    .certificates .certificates-content .card{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
