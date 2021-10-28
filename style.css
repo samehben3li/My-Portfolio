@@ -149,7 +149,8 @@ section .title::after{
     content: "Who Am I";
 }
 .about .about-content,
-.certificates .certificates-content{
+.certificates .certificates-content,
+.skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -238,6 +239,79 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+.skills .title::after{
+    content: "What I Know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 60%;
+}
+.skills .skills-content .right .js::before{
+    width: 80%;
+}
+.skills .skills-content .right .php::before{
+    width: 95%;
+}
+.skills .skills-content .right .node::before{
+    width: 100%;
+}
+
 @media(max-width: 947px){
     .max-width{
         padding: 0 50px;
@@ -298,5 +372,9 @@ section .title::after{
     .certificates .certificates-content .card{
         width: 100%;
         margin-bottom: 20px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
