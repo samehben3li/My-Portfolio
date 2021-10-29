@@ -207,7 +207,7 @@ section .title::after{
 .certificates .title::after,
 .works .title::after{
     background: #111;
-    content: "What I Learn";
+    content: "What I Work";
 }
 .certificates .certificates-content .card{
     width: calc(33% - 20px);
@@ -315,7 +315,7 @@ section .title::after{
 }
 
 .works .title::after{
-    content: "What I Work";
+    content: "What I Learn";
 }
 .works .carousel .card{
     background: #222;
