@@ -63,12 +63,13 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Sameh and I'm a <span class="typing2"></span></div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis soluta sed expedita facere
-                        hic, tempora, consectetur suscipit vel ad officia laborum quos aut aliquam ipsam eius doloribus
-                        cupiditate perferendis in? Consequuntur quae blanditiis fugit dolorem architecto velit mollitia
-                        necessitatibus facere explicabo, totam modi praesentium voluptatibus fuga amet corrupti rerum
-                        accusantium vel incidunt asperiores accusamus et enim vero commodi tenetur? Molestiae?
-                    </p>
+                    <p>i'm a Tunisian back-end web & mobile developper focused on python,java, c/c++,node js,kotlin
+                        ,mongoo db, express js,laravel,php , mySQL , iot , javascript,bootstap.a computer science
+                        student with a great knowledge in web & mobile back-end development, development and
+                        manipulation and creation of databases.Although I am still a student thanks to my experience of
+                        6 years in this field I managed to develop several projects that I invite you to see it below.In
+                        addition to the certificates that have been entrusted to me during my academic career that I
+                        will join them in my portlilio</p>
                     <a href="#">Download CV</a>
                 </div>
             </div>
@@ -168,31 +169,36 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/work.png" alt="">
-                        <div class="text">title work</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <img src="images/courseraalgo.png" alt="">
+                        <div class="text">Programming Fundamentals</div>
+                        <p>an online course authorized by Duke University and offered through
+                            Coursera</p>
                     </div>
+                    <a href="certificates/Courseraalgo.pdf" target="_blank">view</a>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/work.png" alt="">
-                        <div class="text">title work</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <img src="images/c++.jpg" alt="">
+                        <div class="text">C++</div>
+                        <p>I take this certificate from SoloLearn at 04 October, 2020</p>
                     </div>
+                    <a href="certificates/Courseraalgo.pdf" target="_blank">view</a>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/work.png" alt="">
-                        <div class="text">title work</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <img src="images/java.jpg" alt="">
+                        <div class="text">JAVA</div>
+                        <p>I take this certificate from SoloLearn at 15 October, 2020</p>
                     </div>
+                    <a href="certificates/Courseraalgo.pdf" target="_blank">view</a>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/work.png" alt="">
-                        <div class="text">title work</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <img src="images/php.jpg" alt="">
+                        <div class="text">PHP</div>
+                        <p>I take this certificate from SoloLearn at 15 October, 2020</p>
                     </div>
+                    <a href="certificates/php.pdf" target="_blank">view</a>
                 </div>
                 <div class="card">
                     <div class="box">
@@ -240,23 +246,24 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message Me</div>
-                    <form action="#">
+                    <form method="post" action="http://localhost:3000/contact" onsubmit="return check();">
                         <div class="fields">
-                            <div class="field name">
-                                <input type="text" palceholer="Name" required>
+                            <div class="field name" style="padding-right: 10px;">
+                                <input type="text" id="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" palceholer="Email" required>
+                                <input type="email" id="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" palceholer="Subject" required>
+                            <input type="text" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Describe Project.." required></textarea>
+                            <textarea id="desc" cols="30" rows="10" placeholder="Describe Project.."
+                                required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Send Message</button>
+                            <button type="submit" id="btn">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -265,10 +272,12 @@
     </section>
 
     <footer>
-        <span>Created By <a href="#">Sameh Benali</a> | <span class="fa fa-copyright"></span> 2021 All rights reserved.</span>
+        <span>Created By <a href="#">Sameh Benali</a> | <span class="fa fa-copyright"></span> 2021 All rights
+            reserved.</span>
     </footer>
 
     <script src="script.js"></script>
+    <script src="sendmsg.js"></script>
 
 </body>
 
