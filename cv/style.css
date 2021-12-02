@@ -128,7 +128,24 @@ body{
     height: 100%;
     background: #03a9f4;
 }
-
+.contactInfo .boxall{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactInfo .boxall .cer{
+    width: 40%;
+    height: 40px;
+    background-color: #03a9f4;
+    padding: 20px;
+    margin: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #fff;
+}
 .container .right-side{
     position: relative;
     background: #fff;
