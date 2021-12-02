@@ -167,6 +167,9 @@ p{
     color: #2a7da2;
     font-size: 16px;
 }
+.about ul li {
+    list-style: none;
+}
 .skills .box{
     position: relative;
     width: 100%;
