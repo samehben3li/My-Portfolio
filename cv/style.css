@@ -163,6 +163,38 @@ body{
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
+.about ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+.about ul li {
+    width: 40%;
+    padding: 0px;
+    background-color: #03a9f4;
+    border-radius: 20px;
+}
+.about ul li h5{
+    display: flex;
+    background-color: #003147;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 20px 20px 0 0 ;
+}
+.about ul li h4{
+    text-align: center;
+    padding: 10px;
+}
+.about ul li h4:last-child{
+    color: #fff;
+    opacity: 75%;
+    font-size: 0.7em;
+}
+hr{
+    height: 0.8px;
+    opacity: 50%;
+}
 p{
     color: #333;
 }
@@ -227,4 +259,12 @@ p{
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
+}
+.about.skills .box i{
+    color: #003147;
+}
+.about.skills .box h4{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
 }
